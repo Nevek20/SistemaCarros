@@ -1,0 +1,16 @@
+boolean encontrou = false;
+                    System.out.println("Busque a marca do seu carro: ");
+                    String bMarca = ler.nextLine();
+                    for (Carro c : carros){
+                        if (c.getMarca().equalsIgnoreCase(bMarca)){
+                            if(!encontrou){
+                                System.out.println("Carros encontrados:\n");
+                            }
+                            c.mostrarDados();
+                            System.out.println("=============================");
+                            encontrou = true;
+                        }
+                    }
+                    if (!encontrou) {
+                        System.out.println("Não encontramos nenhum carro.");
+                    }

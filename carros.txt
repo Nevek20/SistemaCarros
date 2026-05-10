@@ -1,16 +1,1 @@
 Honda;Civic;Preto;2023;0;false
-                        try(BufferedReader reader = new BufferedReader(new FileReader("Carros.txt"));){
-                            String linha;
-                            while ((linha = reader.readLine()) != null) { 
-                                String[] partes = linha.split(";");
-                                
-                                String marca = partes[0];
-                                String modelo = partes[1];
-                                String cor = partes[2];
-                                int ano = Integer.parseInt(partes[3]);
-                                int velocidade = Integer.parseInt(partes[4]);
-                                boolean ligado = Boolean.parseBoolean(partes[5]);
-                            }
-                        } catch (Exception e ){
-                            System.out.println("Erro ao encontrar um carro");
-                        }
